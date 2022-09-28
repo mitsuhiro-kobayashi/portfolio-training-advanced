@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
 
 
 html {
@@ -18,7 +19,7 @@ body
 html,
 body {
     font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 /*********
@@ -27,12 +28,41 @@ common
 /*********
 CTAボタンのオレンジ色
 **********/
-.common-btn-white {
-    background-color: #fff;
+
+.common-h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.common-h3 {
+font-size: 25px;
+text-align: center;
+}
+.common-h3::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 3px;
+    background-color: #FE8C12;
+    transform: translate(150%);
+    margin-top: 1rem;
+}
+.common-h4 {
+    font-size: 20px;
+    text-align: center;
+}
+.common-h4-orange {
+    font-size: 20px;
+    text-align: center;
+    color: #FE8C12;
+}
+.common-cta-btn {
+    background-color: #FE8C12;
+    color: #fff;
     border-radius: 50px;
     padding: 1% 5%;
     border: solid 0.5px;
     margin: 50px auto;
     display: block;
     text-align: center;
+    font-weight: bold;
 }
