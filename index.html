@@ -9,31 +9,30 @@
     <title>名城ヨガ｜名城公園すぐ</title>
 </head>
 <body>
-    <header>
-        <h1><img src="img/logo.png" alt=""></h1>
+    <header class="header">
+        <div class="h1-logo">
+            <h1><img src="img/meijo yoga studio-1.png" alt="名城ヨガスタジオ"></h1>
+        </div>
         <nav class="nav-pc">
             <ul class="nav-icons">
-                <li><a href="#">スタジオのご紹介</a></li>
-                <li><a href="#">レッスン一覧</a></li>
-                <li><a href="#">お問い合せ</a></li>
-                <li class="common-cta-btn"><a href="#">体験会ご予約</a></li>
+                <li class="nav-icon"><a href="#">スタジオのご紹介</a></li>
+                <li class="nav-icon"><a href="#">レッスン一覧</a></li>
+                <li class="nav-icon"><a href="#">お問い合せ</a></li>
+                <li class="cta-btn"><a href="#">体験会ご予約</a></li>
             </ul>
         </nav>
+        <div class="header-sp">
+            <h2>新しい自分と出会える名城公園初の少人数制ヨガ</h2>
+                <p class="header-sub-comment">
+                    少人数制だから、挫折せずに楽しく続けられる。<br>
+                    アットホームなスタジオ、そして、本場インドで培ったヨガを<br>
+                    ここ名城公園で。
+                </p>
+        </div>
     </header>
     <main>
         <section id="front-fv">
-            <!-- メイン画像は、<source>を使ってレスポンシブを実現 -->
-            <picture>
-                <source srcset="img/top.jpeg" alt="トップ画面" media="(max-width: 800px)">
-                <img src="img/front-top.png" alt="トップ画面">
-            </picture>
-            <h2 class="h2-sp">新しい自分と出会える名城公園初の少人数制ヨガ</h2>
-            <p>
-                少人数制だから、挫折せずに楽しく続けられる。<br>
-                アットホームなスタジオ、そして、本場インドで培ったヨガを<br>
-                ここ名城公園で。
-            </p>
-            <picture>
+            <picture class="front-picture">
                 <source srcset="img/baner-sp.png" alt="トップ画面" media="(max-width: 800px)">
                 <img src="img/baner-pc.png" alt="トップ画面">
             </picture>
@@ -48,10 +47,10 @@
                         のびのびとした空間で体も心もリラックスさせ、日常から解放された60分間を楽しみましょう。
                     </p>
                 </li>
-                <li><img src="img/AdobeStock_261167038.jpeg" alt=""></li>
+                <li><img src="img/AdobeStock_261167038.jpeg" alt="ヨガ"></li>
             </ul>
             <ul>
-                <li><img src="img/AdobeStock_294989007.jpeg" alt=""></li>
+                <li><img src="img/AdobeStock_294989007.jpeg" alt="ヨガ"></li>
                 <li>
                     <h4 class="common-h4">スタッフ、お客様を近くに感じれる</h4>
                     <p>
@@ -66,6 +65,8 @@
         </section>
         <section id="about">
             <h3 class="common-h3">ホットコアのスタジオ</h3>
+            <img src="img/AdobeStock_172139549.jpeg" alt="ヨガ">
+            <img src="AdobeStock_322878643.jpeg" alt="ヨガ">
             <h4 class="common-h4">自然豊かで心地の良いスタジオ</h4>
             <p>緑を基調とした空間で室内とは思えないスタジオ。のびのびとした空間で体も心もリラックスしましょう。</p>
             <p class="guide-line">
@@ -77,6 +78,7 @@
             <h3 class="common-h3">ホットコアのインストラクター</h3>
             <h4 class="common-h4">指導経験豊富な女性インストラクターが指導</h4>
             <p>インストラクターは全員女性。ヨガレッスンの指導経験豊富なメンバーです。インストラクターの紹介。</p>
+            <img src="img/インストラクター①.jpg" alt="ヨガインストラクター①">
             <h4 class="common-h4">YUKO</h4>
             <ul>
                 <li>・E-RYT 500 資格保持者</li>
@@ -85,6 +87,7 @@
             <p>小学生〜高校まで水泳部として活動していたが、怪我が原因で離れる。そこで、ヨガと出会い本場で学びたいと思い、インドへ渡る。ヨガの本場インドで学んだのち、ホットコアのスタジオを開く。</p>
             
             <h4 class="common-h4">ERI</h4>
+            <img src="img/インストラクター②.jpg" alt="ヨガインストラクター②">
             <ul>
                 <li>・E-RYT 200資格保持者</li>
                 <li>・NPO法人日本YOGA盟のティーチャーインストラクター</li>
@@ -154,5 +157,7 @@
         </nav>
         <p>Copyright © Hot Core</p>
     </footer>
+    <!-- ページ上部へ戻るボタン -->
+    <a href="#" class="scroll-button"><span class="scroll-button-arrow"></span></a>
 </body>
 </html>

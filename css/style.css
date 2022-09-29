@@ -18,6 +18,8 @@ body
 
 html,
 body {
+    /* どこがはみ出しているかが分かる */
+    outline: 1px #000 solid;
     font-size: 16px;
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
@@ -62,7 +64,87 @@ text-align: center;
     padding: 1% 5%;
     border: solid 0.5px;
     margin: 50px auto;
-    display: block;
+    /* display: block; */
     text-align: center;
     font-weight: bold;
+}
+
+/*********
+header
+**********/
+.header {
+    background-image: url(../img/front-top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    width: 150px;
+}
+.nav-pc {
+    margin-right: 30px;
+}
+.nav-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+.nav-icon {
+    /* width: 130px; */
+    margin-top: 30px;
+    text-align: center;
+}
+.nav-icon a {
+    font-weight: bold;
+}
+.cta-btn {
+    background-color: #FE8C12;
+    color: #fff;
+    border-radius: 50px;
+    padding: 2% 3%;
+    border: solid 0.5px;
+    /* display: block; */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.header-sp {
+    display: none;
+}
+/*********
+main
+**********/
+/*********
+front-fv
+**********/
+
+
+
+/*********
+スクロールボタンscroll-button
+**********/
+.scroll-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 2px solid #F6D7BD;
+    text-align: center;
+    z-index: 100;
+}
+.scroll-button-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top:  3px solid #FE8C12;
+    border-left: 3px solid #FE8C12;
+    transform: rotate(45deg) translate(8px, 8px);
 }
