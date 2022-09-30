@@ -76,9 +76,8 @@ header
     background-image: url(../img/front-top.png);
     background-size: contain;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 100%;
-    height: 700px;
+    height: 1000px;
     display: flex;
     justify-content: space-between;
 }
@@ -121,6 +120,11 @@ main
 /*********
 front-fv
 **********/
+.front-fv {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
 
 
 
