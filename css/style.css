@@ -18,7 +18,7 @@ body
 
 html,
 body {
-    /* どこがはみ出しているかが分かる */
+    /* どこがはみ出しているかが分かる.最後消す */
     outline: 1px #000 solid;
     font-size: 16px;
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -34,10 +34,13 @@ CTAボタンのオレンジ色
 .common-h2 {
     font-size: 50px;
     text-align: center;
+    font-weight: bold;
 }
 .common-h3 {
 font-size: 25px;
 text-align: center;
+margin: 60px;
+font-weight: bold;
 }
 .common-h3::after {
     content: '';
@@ -51,6 +54,8 @@ text-align: center;
 .common-h4 {
     font-size: 20px;
     text-align: center;
+    margin: 30px;
+    font-weight: bold;
 }
 .common-h4-orange {
     font-size: 20px;
@@ -68,6 +73,13 @@ text-align: center;
     text-align: center;
     font-weight: bold;
 }
+.common-txt {
+    text-align: center;
+}
+
+#welcome,#about,#instructor,#course,#lessen,#voice,#access,#contact{
+    margin: 0 10%;
+}
 
 /*********
 header
@@ -77,12 +89,12 @@ header
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1000px;
+    height: clamp(400px, 900px, 900px);
     display: flex;
     justify-content: space-between;
 }
 h1 {
-    width: 150px;
+    width: 200px;
 }
 .nav-pc {
     margin-right: 30px;
@@ -124,6 +136,77 @@ front-fv
     width: 70%;
     display: block;
     margin: auto;
+}
+
+/*********
+welcome
+**********/
+.welcome-contents {
+    display: flex;
+    justify-content: space-between;
+}
+.welcome-txt {
+    width: 50%;
+    margin: 3% 5%;
+}
+.welcome-img {
+    width: 50%;
+}
+.welcome-img img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+/*********
+about
+**********/
+.about-img img {
+    width: 50%;
+    border-radius: 20%;
+    height: auto;
+    padding: 0 2%;
+}
+.about-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.guide-line {
+    margin-top: 20px;
+    background-color: #F0CDC1;
+    color: #D06456;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+}
+.guide-line a {
+    text-decoration:underline;
+    text-decoration-color:#D06456;
+}
+/*********
+instructor
+**********/
+.instructor-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.a {
+    background-color: #FCF8F5;
+    border-radius: 20%;
+    width: 50%;
+}
+.instructor-content {
+    display: flex;
+}
+.instructor-about {
+    padding: 2%;
+    width: 40%;
+}
+.instructor-about img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 
