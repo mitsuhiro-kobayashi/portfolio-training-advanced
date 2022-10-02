@@ -192,21 +192,36 @@ instructor
     justify-content: space-between;
     padding: 2%;
 }
-.a {
+.instructor-content {
     background-color: #FCF8F5;
     border-radius: 20%;
     width: 50%;
+    margin: 1%;
+    padding: 3%;
 }
-.instructor-content {
-    display: flex;
+.instructor-content p {
+    margin-top: 3%;
 }
 .instructor-about {
+    display: flex;
+}
+.instructor-img {
     padding: 2%;
     width: 40%;
 }
-.instructor-about img {
+.instructor-img img {
     width: 100%;
     border-radius: 50%;
+}
+.instructor-txt h4 {
+    margin: 0;
+}
+.instructor-txt ul li {
+    font-size: small;
+}
+.instructor-txt {
+    padding: 1%;
+    width: 60%;
 }
 
 
