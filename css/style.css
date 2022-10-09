@@ -340,8 +340,15 @@ contact
 footer
 **********/
 .footer {
-    background-color: #FE8C12;
     color: #fff;
+}
+.footer::after {
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../img/wave.svg);
+    height: 0;
+    width: 100%;
+    padding-bottom: 10.55555%; /* = 152 / 1440 */
 }
 .footer-contents {
     display: flex;
