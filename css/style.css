@@ -102,7 +102,7 @@ h1 {
 }
 .nav-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 600px;
 }
 .nav-icon {
@@ -340,24 +340,61 @@ contact
 footer
 **********/
 .footer {
-    color: #fff;
-}
-.footer::after {
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url(../img/wave.svg);
+    position: relative;
+    background-color: #FE8C12;
     height: 0;
+    color: #fff;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 53px;
     width: 100%;
-    padding-bottom: 10.55555%; /* = 152 / 1440 */
-}
+    background-color: #FCF8F5;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 100%;
+    background-color: #FCF8F5;
+    right: -1.5%;
+    top: 40%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 109%;
+    background-color: #FE8C12;
+    left: -1.5%;
+    top: 60%;
+  }
 .footer-contents {
     display: flex;
+    background-color: #FE8C12;
 }
 .footer-logo {
     width: 20%;
 }
-.footer-logo img {
-    width: 100%;
+.footer-content {
+    width: 80%;
+    margin-top: 3%;
+}
+.nav-footer {
+    padding-top: 3%;
+}
+.footer-nav {
+    background-color: #FE8C12;
+}
+.footer-nav p {
+    text-align: center;
+    padding: 2%;
 }
 
 /*********
@@ -383,4 +420,28 @@ footer
     border-top:  3px solid #FE8C12;
     border-left: 3px solid #FE8C12;
     transform: rotate(45deg) translate(8px, 8px);
+}
+
+@media screen and (max-width:767px) {
+    h1 {
+        width: 130px;
+    }
+    .header {
+        display: block;
+        background-image: url(../img/top.jpeg);
+        height: auto;
+    }
+    .nav-pc {
+        display: none;
+    }
+    .header-sp {
+        display: block;
+        padding-top: 150px;
+    }
+    .header-sp h2 {
+        font-weight: bold;
+    }
+    .front-fv {
+        width: 95%;
+    }
 }
