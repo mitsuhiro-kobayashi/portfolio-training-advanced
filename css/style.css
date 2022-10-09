@@ -22,6 +22,7 @@ body {
     outline: 1px #000 solid;
     font-size: 16px;
     font-family: 'Zen Kaku Gothic New', sans-serif;
+    background-color: #FCF8F5;
 }
 
 /*********
@@ -39,7 +40,7 @@ CTAボタンのオレンジ色
 .common-h3 {
 font-size: 25px;
 text-align: center;
-margin: 60px;
+margin: 15% 0 5% 0;
 font-weight: bold;
 }
 .common-h3::after {
@@ -59,8 +60,8 @@ font-weight: bold;
 }
 .common-h4-orange {
     font-size: 20px;
-    text-align: center;
     color: #FE8C12;
+    margin: 30px;
 }
 .common-cta-btn {
     background-color: #FE8C12;
@@ -193,7 +194,7 @@ instructor
     padding: 2%;
 }
 .instructor-content {
-    background-color: #FCF8F5;
+    background-color: #fff;
     border-radius: 20%;
     width: 50%;
     margin: 1%;
@@ -214,7 +215,7 @@ instructor
     border-radius: 50%;
 }
 .instructor-txt h4 {
-    margin: 0;
+    margin: 0 0 2% 0;
 }
 .instructor-txt ul li {
     font-size: small;
@@ -224,7 +225,133 @@ instructor
     width: 60%;
 }
 
+/*********
+course
+**********/
+.course-contents {
+    display: flex;
+    justify-content: space-between;
+}
+.course-content {
+    margin: 0 2%;
+    width: 33.33333%;
+    border-radius: 60px 60px;
+    background-color: #fff;
+    padding: 0 0 5% 0;
+}
+.course-content img {
+    border-radius: 60px 60px 0 0;
+    height: 180px;
+}
+.course-content p {
+    padding: 0 5%;
+}
+.course-btn {
+    text-align: center;
+    margin: 5% 0 10% 0;
+}
+/*********
+lessen
+**********/
+.lessen-contents {
+    display: flex;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 2% 5%;
+}
+.lessen-movie {
+    width: 50%;
+}
+.lessen-movie img {
+    width: 100%;
+    padding: 5%;
+}
+.lessen-content {
+    width: 50%;
+}
+.lessen-content a {
+    display: block;
+    padding: 1% 0;
+}
 
+/*********
+voice
+**********/
+.voice-contents {
+    display: flex;
+    margin: 5% 0;
+}
+.voice-img {
+    display: inline-block;
+    width: 20%;
+}
+.voice-img img {
+    border: 3px solid #FE8C12;
+    border-radius: 50%;
+}
+.voice-content {
+    width: 80%;
+    background-color: #F6D7BD;
+    border-radius: 80px;
+    padding: 4%;
+    margin-left: 5%;
+    position: relative;
+}
+.voice-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #F6D7BD;
+}
+
+/*********
+access
+**********/
+.map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; 
+    /* 56.25%は16:9。比率を4:3に固定する場合は75% */
+    /*heightではなくpadding-topで高さを指定するとレスポンシブできる*/
+}
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*********
+contact
+**********/
+.contact-btn {
+    text-align: center;
+    margin: 10%;
+}
+.contact-btn a {
+    padding: 1% 10%;
+}
+
+/*********
+footer
+**********/
+.footer {
+    background-color: #FE8C12;
+    color: #fff;
+}
+.footer-contents {
+    display: flex;
+}
+.footer-logo {
+    width: 20%;
+}
+.footer-logo img {
+    width: 100%;
+}
 
 /*********
 スクロールボタンscroll-button
