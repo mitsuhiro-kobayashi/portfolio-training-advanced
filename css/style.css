@@ -1,8 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
-
-
 html {
     /* スムーススクロール */
     scroll-behavior: smooth;
@@ -423,25 +421,102 @@ footer
 }
 
 @media screen and (max-width:767px) {
+    br {
+        display: none;
+    }
+    #welcome, #about, #instructor, #course, #lessen, #voice, #access, #contact {
+        margin: 0 3%;
+    }
+    .common-h4 {
+        margin: 30px 0;
+    }
+    .common-h3 {
+        margin: 25% 0 5% 0;
+    }
+    .common-h3::after {
+        width: 70%;
+        transform: translate(20%);
+    }
+    .common-cta-btn {
+        padding: 3% 15%;
+    }
     h1 {
         width: 130px;
     }
     .header {
         display: block;
-        background-image: url(../img/top.jpeg);
-        height: auto;
+        background-image: url(../img/sp-top.png);
+        height: 520px;
     }
     .nav-pc {
         display: none;
     }
     .header-sp {
         display: block;
-        padding-top: 150px;
+        margin-bottom: 3rem;
     }
     .header-sp h2 {
         font-weight: bold;
+        font-size: 32px;
+        margin-left: 10px;
+    }
+    .header-sp p {
+        line-height: 2rem;
+        margin-left: 10px;
     }
     .front-fv {
         width: 95%;
+    }
+    .welcome-contents {
+        display: block;
+    }
+    .welcome-txt {
+        width: 100%;
+        margin: 3% 0;
+    }
+    .welcome-img {
+        width: 100%;
+        margin: 3% 0;
+    }
+    .about-img {
+        display: block;
+    }
+    .about-img img {
+        width: 100%;
+        margin: 3% 0;
+    }
+    .instructor-contents {
+        display: block;
+    }
+    .instructor-content {
+        width: 100%;
+        margin: 3% 0;
+        padding: 6%;
+    }
+    .course-contents {
+        display: block;
+    }
+    .course-content {
+        width: 100%;
+        margin: 7% 0;
+    }
+    .lessen-contents {
+        display: block;
+    }
+    .lessen-movie {
+        width: 100%;
+    }
+    .lessen-content {
+        width: 100%;
+    }
+    .voice-img {
+        width: 35%;
+        margin: 80% 0;
+    }
+    .voice-content {
+        padding: 7%;
+    }
+    .footer-contents {
+        padding-top: 10%;
     }
 }
