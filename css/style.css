@@ -407,7 +407,7 @@ footer
 .scroll-button {
     display: inline-block;
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     right: 30px;
     width: 45px;
     height: 45px;
