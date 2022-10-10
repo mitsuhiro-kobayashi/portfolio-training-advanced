@@ -16,8 +16,6 @@ body
 
 html,
 body {
-    /* どこがはみ出しているかが分かる.最後消す */
-    outline: 1px #000 solid;
     font-size: 16px;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     background-color: #FCF8F5;
