@@ -83,6 +83,12 @@ font-weight: bold;
 /*********
 header
 **********/
+.hamburger-btn {
+    display: none;
+}
+.menu-sp {
+    display: none;
+}
 .header {
     background-image: url(../img/front-top.png);
     background-size: contain;
@@ -401,8 +407,8 @@ footer
 .scroll-button {
     display: inline-block;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 30px;
     width: 45px;
     height: 45px;
     background-color: #fff;
@@ -444,7 +450,6 @@ footer
         width: 130px;
     }
     .header {
-        display: block;
         background-image: url(../img/sp-top.png);
         height: 520px;
     }
@@ -511,12 +516,114 @@ footer
     }
     .voice-img {
         width: 35%;
-        margin: 80% 0;
+        position: relative;
+    }
+    .voice-img img {
+        position: absolute;
+        top: 35%;
+        height: auto;
     }
     .voice-content {
         padding: 7%;
     }
     .footer-contents {
-        padding-top: 10%;
+        display: block;
+    }
+    .contact-btn {
+        padding: 3rem 0;
+    }
+    .footer-logo {
+        width: 100%;
+    }
+    .footer-content {
+        width: 100%;
+        margin: 0 0 0 5%;
+    }
+    .contact-btn a {
+        padding: 5% 30%;
+        font-size: larger;
+    }
+    /*********
+    hamburger-menu
+    **********/
+    .hamburger-btn {
+        display: block;
+        position: absolute;
+        right: 30px;
+        width: 50px;
+        height: 54px;
+        transition: 1s;
+        border: none;
+        background: transparent;
+        z-index: 100;
+    }
+    .inner_line {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 3px;
+        background-color: #FE8C12;
+        transition: 1s;
+        border-radius: 4px;
+    }
+    #line1 {
+        top: 20px;
+    }
+    #line2 {
+        top: 30px;
+    }
+    #line3 {
+        bottom: 10px;
+    }
+    .menu-pc {
+        display: none;
+    }
+    .menu-sp {
+        display: block;
+        position:fixed;
+        z-index: 2;
+        top:0;
+        right: -130%;
+        width:100%;
+        height: 100vh;/*表示する高さ*/
+        background:rgba(255,255,255,0.9);  /*０.7秒かけてナビメニューがスライドする*/
+        transition: .7s;
+    }
+    .menu-icons {
+        display: block;
+        position: absolute;
+        top:40%;
+        left:40%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+        text-align: center;
+    }
+    .menu-icon {
+        margin: 30px 0;
+    }
+    .menu-icon a {
+        font-size: larger;
+        display: block;
+    }
+    /* アイコンをクリックした時の動作のCSS */
+    .in{
+        right: -20%;
+    }
+    .line_1,.line_2,.line_3{
+        background: #FE8C12;
+    }
+    .line_1 {
+        /*-45度回転させる*/
+        transform: translateY(10px) rotate(-45deg);
+        top: 0;
+    }
+    .line_2 {
+        opacity: 0;
+    }
+    .line_3 {
+        /*45度回転させる*/
+        transform: translateY(-10px) rotate(45deg);
+        bottom: 0;
     }
 }
