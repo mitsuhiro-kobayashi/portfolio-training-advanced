@@ -161,6 +161,29 @@ welcome
 }
 
 /*********
+news
+**********/
+.front-news {
+    border-bottom: 0.3px solid #DDDDDD;
+    margin: 0 10%;
+    padding: 2% 5%;
+}
+.front-news a {
+    font-size: 10px;
+    display: flex;
+}
+.front-news time {
+    padding: 0.5% 0.5%;
+    color: #c4a18e;
+    margin-right: 50px;
+    font-size: larger;
+
+}
+.front-news h4 {
+    font-size: 18px;
+    text-align: left;
+}
+/*********
 about
 **********/
 .about-img img {
